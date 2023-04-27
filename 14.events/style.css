@@ -1,0 +1,18 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px dashed black;
+    height: 95vh;
+    row-gap: 10px;
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#label-check{
+    visibility: hidden;
+}
