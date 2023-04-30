@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 2px auto;
+    border-collapse: collapse;
+}
+
+table th {
+    cursor: pointer;
+}
+.fa-arrow-down,
+.fa-arrow-up,
+.fa-arrow-down-a-z,
+.fa-arrow-up-a-z {
+    display: none;
+}
