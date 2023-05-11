@@ -1,0 +1,50 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+li {
+  margin: 15px;
+}
+.content {
+  margin: 0 18%;
+  margin-top: 100px;
+}
+.card {
+  border: 1px solid gray;
+  padding: 15px;
+}
+.delete-btn {
+  border-radius: 5px;
+  background-color: brown;
+  padding: 7px;
+  border: 0px;
+  color: white;
+}
+.edit-btn {
+  border-radius: 5px;
+  background-color: rgb(42, 155, 165);
+  padding: 7px;
+  border: 0px;
+  color: white;
+}
+/* new blog */
+form {
+  margin: 0 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+#add-blog {
+  width: 90px;
+}

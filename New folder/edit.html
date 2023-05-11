@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <h2>The Blog Website</h2>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="newblog.html">New Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <form>
+        <h3>Edit</h3>
+        <label for="">Blog title:</label>
+        <input type="text" id="blog-title" />
+        <label for="">Blog body:</label>
+        <textarea id="blog-body" cols="30" rows="10"></textarea>
+        <label for="">Blog Author:</label>
+        <select id="author">
+          <option>Gulnara1</option>
+          <option>Gulnara2</option>
+          <option>Gulnara3</option>
+          <option>Gulnara4</option>
+        </select>
+        <button type="submit" id="add-blog">Edit</button>
+      </form>
+    </div>
+    <script src="./newblog.js"></script>
+  </body>
+</html>
