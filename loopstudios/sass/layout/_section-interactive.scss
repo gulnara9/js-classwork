@@ -1,0 +1,100 @@
+.interactive-sec {
+  //   .interactive-text-image {
+  margin-top: 0;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 90vh;
+  .interactive-img {
+    width: 50%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .image-2 {
+    display: none;
+  }
+  .interactive-text {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    text-align: center;
+    width: 500px;
+    margin-top: 35px;
+    //   .texts{
+    padding: 6% 6% 0 6%;
+    background-color: white;
+    h1 {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 200;
+      font-size: 50px;
+      line-height: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: center;
+      font-family: "Alata", sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: black;
+
+      opacity: 0.5;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .interactive-sec {
+    margin-top: 10%;
+    //   padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+    flex-direction: column;
+    .interactive-image {
+      display: none;
+    }
+    .image-2 {
+        
+      display: inline-block;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .interactive-text {
+      position: static;
+      // margin-top: 35px;
+      text-align: center;
+      // width: 90%;
+      padding: 0 7%;
+      background-color: white;
+      h1 {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 200;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 15px;
+      }
+      p {
+        text-align: center;
+        font-family: "Alata", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: black;
+        opacity: 0.5;
+      }
+    }
+  }
+}

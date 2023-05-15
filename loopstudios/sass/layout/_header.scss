@@ -1,0 +1,182 @@
+header {
+  background-image: url("../images/desktop/image-hero.jpg");
+  height: 100vh;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .bg-black {
+    background-color: black !important;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 10%;
+    .logo {
+      width: 190px !important;
+      height: px !important;
+      //   margin: 7%;
+      cursor: pointer;
+      z-index: 2;
+    }
+    $overlay-bg-color: rgba(0, 0, 0, 0.9);
+    #myyNav {
+      display: none;
+    }
+    .overlay {
+      // display: none !important;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: $overlay-bg-color;
+      overflow-x: hidden;
+      transition: 0.5s;
+   
+      &-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        // text-align: center;
+        margin-top: 30px;
+      }
+
+      a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+          color: #f1f1f1;
+        }
+      }
+
+      .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+      @media screen and (max-height: 450px) {
+        a {
+          font-size: 20px;
+        }
+
+        .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+        }
+      }
+    }
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    span {
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: none;
+      width: 24px;
+      height: 16px;
+      //   margin: 7%;
+      cursor: pointer;
+      z-index: 2;
+    }
+    nav {
+      ul {
+        gap: 35px;
+        display: flex;
+        justify-content: space-around;
+        li {
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 500;
+          font-size: 17px;
+          a {
+            color: white;
+            &:hover {
+              padding-bottom: 5px;
+              border-bottom: 2px solid white;
+              color: white;
+            }
+            // background-color: aqua;
+          }
+        }
+      }
+    }
+  }
+
+  .borderli-text {
+    margin: 6% 10%;
+    border: 2px solid white;
+    position: absolute;
+    top: 210px;
+    max-width: 650px;
+
+    h1 {
+      font-family: Josefin Sans;
+      padding: 40px;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 75px;
+      line-height: 70px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+
+  @media (max-width: 992px) {
+    header {
+      background-image: url("../images/mobile/image-hero.jpg");
+    }
+    .navbar #nav {
+      display: none;
+    }
+    .navbar #myyNav {
+      display: block;
+
+    }
+    .navbar #myNav{
+      display: block;
+    }
+    .borderli-text {
+      margin: 6% 10%;
+      border: 2px solid white;
+      position: absolute;
+      top: 210px;
+      max-width: 600px;
+
+      h1 {
+        font-family: Josefin Sans;
+        padding: 20px;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 40px;
+        line-height: 45px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  header {
+    background-image: url("../images/mobile/image-hero.jpg");
+  }
+}
