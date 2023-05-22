@@ -1,0 +1,31 @@
+header {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    nav {
+      .fa-solid {
+        display: none;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        li {
+          a {
+            font-weight: 300;
+            font-size: 14px;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
